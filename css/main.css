@@ -64,9 +64,6 @@ h2 {
   text-align: center;
 
 }
-a {
-  /* text-decoration: none; */
-}
 .steps {
   grid-area: steps;
   margin-right: 100px;
