@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Peanut Noodles</title>
+<link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Peanut Noodles</h1>
+      </header>
+      <div class="description">
+        This delicious recipe is quick, easy, and super flavorful! It is the perfect solution to the age-old dilemma of wanting to cook something tasty, but not having all the time in the world. These peanut noodles require only 5 minutes of prep time, and about 10 more to cook. Enjoy!
+      </div>
+      <div class="grid">
+        <div class="ingredients">
+          <h2>Ingredients</h2>
+          <p class="ingtext">
+            <p id="serving"><em>Yields 8 servings</em></p>
+            <ul class="ingtext">
+              <li>16oz box of Linguine</li>
+              <li>1 1/2 cup water</li>
+              <li>1/2 cup creamy peanut butter</li>
+              <li>1 teaspoon grated ginger</li>
+              <li>1/4 cup low-sodium soy sauce</li>
+              <li>1 tablespoon Siracha</li>
+              <li>1 tablespoon brown sugar</li>
+              <li>2 tablespoons freshly squeezed lime juice</li>
+              <li>Sesame oil (drizzled on to your liking)</li>
+            </ul>
+          </p>
+        </div>
+        <div class="ingphoto">
+          <img src="img/1.jpeg" alt="ingredients">
+        </div>
+        <div class="photos">
+          <img id="photo" src="" alt="">
+        </div>
+        <div class="steps">
+          <h2>Instructions</h2>
+          <div class="accordion">
+          <h3><a id="1" href="">Step 1</a></h3>
+          <p>Boil 4-6 quarts of well-salted water for the Linguine.</p>
+
+          <h3><a id="2" href="">Step2</a></h3>
+          <p>In a second saucepan, add 1 1/2 cup of water, 1/2 cup of creamy peanut butter, 1 teaspoon grated ginger, 1/4 cup low-sodium soy sauce, 1 tablespoon Siracha, 1 tablespoon brown sugar, and heat on medium-low heat.</p>
+
+          <h3><a id="3" href="">Step 3</a></h3>
+          <p>Once peanut butter starts to melt, raise to medium heat and bring to low boil.  Periodically taste for flavor and add siracha or brown sugar as desired.</p>
+
+          <h3><a id="4" href="">Step 4</a></h3>
+          <p>Place the Linguine in the boiling water. Cook for 7-8 minutes until al dente.</p>
+
+          <h3><a id="5" href="">Step 5</a></h3>
+          <p>Add 2 tablespoons of lime juice. Turn sauce back down and let simmer.</p>
+
+          <h3><a id="6" href="">Step 6</a></h3>
+          <p>Once Linguine has finished cooking, place in colander and drain.</p>
+
+          <h3><a id="7" href="">Step 7</a></h3>
+          <p>Serve pasta in bowl and pour the sauce on top! Drizzle sesame oil over the top just before eating for extra flavor.</p>
+          </div>
+          <script type="text/javascript">
+              $(document).ready(function(){
+                var allPanels = $('.accordion > p').hide();
+
+                $('.accordion > h3 > a').click(function() {
+                  allPanels.slideUp();
+                  $(this).parent().next().slideDown();
+                  return false;
+                });
+                $("#1").click(function() {
+                  $("#photo").attr('src','img/2.jpeg');
+                  $("#photo").fadeIn(1000);
+                });
+                $("#2").click(function() {
+                  $("#photo").attr('src','img/3.jpeg');
+                });
+                $("#3").click(function() {
+                  $("#photo").attr('src','img/4.jpeg');
+                });
+                $("#4").click(function() {
+                  $("#photo").attr('src','img/5.jpeg');
+                });
+                $("#5").click(function() {
+                  $("#photo").attr('src','img/6.jpeg');
+                });
+                $("#6").click(function() {
+                  $("#photo").attr('src','img/7.jpeg');
+                });
+                $("#7").click(function() {
+                  $("#photo").attr('src','img/8.jpeg');
+                });
+              });
+          </script>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
